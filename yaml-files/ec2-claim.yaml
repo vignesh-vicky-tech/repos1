@@ -2,13 +2,13 @@
 apiVersion: compositions.io/v1alpha1
 kind: Instance
 metadata:
-  name: "sample-ec2"
+  name: "latest-ec2"
 spec:
   parameters:
     region: "us-east-1"
     ami: "ami-06aa3f7caf3a30282"
     instanceType: "t2.small"
-    keyName: "finalkey"
+    keyName: "latest-cross-key"
   compositionRef:
     name: ec2-instance
 
